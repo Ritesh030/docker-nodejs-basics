@@ -1,3 +1,17 @@
+docker file-->
+```
+
+FROM node
+
+WORKDIR /myLearnings/Wev-devlopment/X-BackEnd_Dev/Y-Projects
+
+COPY . .
+
+RUN npm ci
+
+CMD ["npm", "start"]
+```
+
 docker commands --> 
 1. To build the container image -> `docker build -t docker-nodejs-basics .`
 2. To make the container live and running -> `docker run -it docker-nodejs-basics` { but this will not run the app on localhost also the app cannot be controlled ussing terminal }
